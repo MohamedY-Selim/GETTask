@@ -1,4 +1,4 @@
-package net.phptravels.utils;
+package com.codenboxautomationlab.utils;
 
 import com.github.javafaker.Faker;
 
@@ -10,7 +10,6 @@ public class ConfigUtils {
     private static ConfigUtils configUtils;
     private static final Random random = new Random();
     private static final Faker faker = new Faker();
-    String userTypeCon;
 
     private ConfigUtils() {
         String env = System.getProperty("env", "TESTING");

@@ -1,17 +1,16 @@
-package net.phptravels.pages;
+package com.codenboxautomationlab.pages;
 
+import com.codenboxautomationlab.base.BasePage;
+import com.codenboxautomationlab.config.EndPoint;
+import com.codenboxautomationlab.objects.User;
+import com.codenboxautomationlab.utils.ConfigUtils;
 import io.qameta.allure.Step;
-import net.phptravels.base.BasePage;
-import net.phptravels.config.EndPoint;
-import net.phptravels.objects.User;
-import net.phptravels.utils.ConfigUtils;
-import net.phptravels.utils.UserUtils;
+import com.codenboxautomationlab.utils.UserUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package net.phptravels.objects;
+package com.codenboxautomationlab.objects;
 
 public class User {
     //Attributes

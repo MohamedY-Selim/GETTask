@@ -1,9 +1,9 @@
-package net.phptravels.base;
+package com.codenboxautomationlab.base;
 
+import com.codenboxautomationlab.factory.DriverFactory;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
-import net.phptravels.factory.DriverFactory;
-import net.phptravels.utils.UserUtils;
+import com.codenboxautomationlab.utils.UserUtils;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,7 +12,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
@@ -30,15 +29,11 @@ public class BaseTest {
 
     protected SoftAssert softAssert = new SoftAssert();
     protected ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    protected LocalDate today = LocalDate.now();
-    protected DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-    protected String formattedDate = today.format(formatter);
     public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
     public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_WHITE = "\u001B[37m";
     public static final String ANSI_RESET = "\u001B[0m";
-    protected UserUtils userUtils = new UserUtils();
 
 
     public void setDriver(WebDriver driver) {

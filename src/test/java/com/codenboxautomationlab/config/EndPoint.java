@@ -1,4 +1,4 @@
-package net.phptravels.config;
+package com.codenboxautomationlab.config;
 
 public class    EndPoint {
 

@@ -1,13 +1,9 @@
-package net.phptravels.testcases;
+package com.codenboxautomationlab.testcases;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import net.phptravels.base.BaseTest;
-import net.phptravels.config.EndPoint;
-import net.phptravels.pages.HomePage;
-import net.phptravels.pages.LoginPage;
-import net.phptravels.pages.RegistrationPage;
-import net.phptravels.utils.ConfigUtils;
+import com.codenboxautomationlab.base.BaseTest;
+import com.codenboxautomationlab.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

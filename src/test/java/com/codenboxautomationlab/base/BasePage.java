@@ -1,4 +1,4 @@
-package net.phptravels.base;
+package com.codenboxautomationlab.base;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;

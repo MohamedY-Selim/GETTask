@@ -1,10 +1,9 @@
-package net.phptravels.pages;
+package com.codenboxautomationlab.pages;
 
 import io.qameta.allure.Step;
-import net.phptravels.base.BasePage;
-import net.phptravels.config.EndPoint;
-import net.phptravels.utils.ConfigUtils;
-import org.openqa.selenium.By;
+import com.codenboxautomationlab.base.BasePage;
+import com.codenboxautomationlab.config.EndPoint;
+import com.codenboxautomationlab.utils.ConfigUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
