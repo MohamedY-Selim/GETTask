@@ -4,6 +4,7 @@ import io.qameta.allure.Step;
 import net.phptravels.base.BasePage;
 import net.phptravels.config.EndPoint;
 import net.phptravels.utils.ConfigUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,7 +37,7 @@ public class LoginPage extends BasePage {
     //Methods
     @Step("Load the signup page")
     public LoginPage load() {
-        driver.get(ConfigUtils.getInstance().getBaseUrl() + EndPoint.SIGNUP_PAGE_END_POINT);
+        driver.get(ConfigUtils.getInstance().getBaseUrl() + EndPoint.LOGIN_PAGE_END_POINT);
         return this;
     }
 

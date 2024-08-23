@@ -3,9 +3,11 @@ package net.phptravels.pages;
 import io.qameta.allure.Step;
 import net.phptravels.base.BasePage;
 import net.phptravels.utils.ConfigUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class HomePage extends BasePage {
@@ -20,8 +22,6 @@ public class HomePage extends BasePage {
     private WebElement courseSignupButton;
     @FindBy(id = "menu-item-107")
     private WebElement registrationFormButton;
-    @FindBy(linkText = "Log in")
-    private WebElement loginButton;
 
     //Methods
     @Step("Load the home page")
@@ -41,10 +41,6 @@ public class HomePage extends BasePage {
         registrationFormButton.click();
         return new RegistrationPage(driver);
     }
-    @Step("Click on Login button")
-    public LoginPage clickOnLoginButton() {
-        loginButton.click();
-        return new LoginPage(driver);
-    }
+
 
 }

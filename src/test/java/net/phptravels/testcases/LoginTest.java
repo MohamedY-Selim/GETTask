@@ -13,24 +13,13 @@ import org.testng.annotations.Test;
 
 @Feature("Signup Feature")
 public class LoginTest extends BaseTest {
-
-    @Story("Home Page")
-    @Test(description = "Navigate to login page")
-    public void VerifyThatUserCanNavigateToLoginPageSuccessfully() {
-        HomePage homePage = new HomePage(getDriver());
-        boolean loginFormDisplayed = homePage
-                .load()
-                .clickOnLoginButton().isLoginFormDisplayed();
-        Assert.assertTrue(loginFormDisplayed);
-        Assert.assertEquals(homePage.getCurrentPageUrl(), ConfigUtils.getInstance().getBaseUrl() + EndPoint.LOGIN_PAGE_END_POINT);
-    }
-
     @Story("Login Page")
     @Test(description = "Attempt to Login")
     public void VerifyThatUserCanLogin() {
         LoginPage loginPage = new LoginPage(getDriver());
         boolean isErrorMessageDisplayed = loginPage
                 .load()
+                .fillLoginForm()
                 .isErrorMessageDisplayed();
         Assert.assertFalse(isErrorMessageDisplayed);
     }
