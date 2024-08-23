@@ -2,18 +2,40 @@ name: Run Selenium Test
 
 on:
   push:
-    branches: [ "master","main" ]
-
+    branches: [ "master", "main" ]
 
 jobs:
   test:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+
+      # Setup Java
       - uses: actions/setup-java@v3
         with:
           java-version: "22"
           cache: maven
           distribution: "temurin"
+
+      # Setup Chrome
       - uses: browser-actions/setup-chrome@latest
+
+      # Run Maven tests and generate Allure results
       - run: mvn clean test
+
+      # Install Allure
+      - name: Install Allure
+        run: |
+          brew install allure
+
+      # Generate Allure report
+      - name: Generate Allure Report
+        run: |
+          allure generate --clean
+
+      # Upload Allure report as an artifact
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-report
+          path: allure-report
