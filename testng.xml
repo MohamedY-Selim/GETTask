@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test Initiation">
+        <classes>
+            <class name="net.phptravels.factory.DriverFactory"/>
+        </classes>
+    </test>
+
+    <test verbose="1" name="Registration Test" group-by-instances="true">
+        <classes>
+            <class name="net.phptravels.testcases.SignupTest"/>
+        </classes>
+    </test>
+    <test verbose="2" name="Login Test" group-by-instances="true">
+        <classes>
+            <class name="net.phptravels.testcases.LoginTest"/>
+        </classes>
+    </test>
+</suite>
