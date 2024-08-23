@@ -31,7 +31,7 @@ jobs:
       # Generate Allure report
       - name: Generate Allure Report
         run: |
-          allure generate --clean
+          allure generate target/allure-results --clean -o allure-report
 
       # Upload Allure report as an artifact
       - name: Upload Allure Report
@@ -41,11 +41,14 @@ jobs:
           path: allure-report
 
       - name: Publish Allure Report to GitHub Pages
+        if: success() # Only run if the previous steps succeed
         run: |
           git config --global user.email "mohamed_yehia@acu.edu.eg"
           git config --global user.name "MohamedYehia"
-          git checkout -b gh-pages
-          cp -r target/site/allure-maven/* .
+          git fetch origin gh-pages:gh-pages || git checkout --orphan gh-pages
+          git checkout gh-pages
+          git rm -rf .
+          cp -r allure-report/* .
           git add .
           git commit -m "Publishing Allure Report to GitHub Pages"
-          git push --force --set-upstream origin gh-pages
+          git push --force origin gh-pages
