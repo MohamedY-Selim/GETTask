@@ -1,11 +1,11 @@
-name: Run Selenium Test
+name: Run Tests and Deploy Allure Report
 
 on:
   push:
     branches: [ "master", "main" ]
 
 jobs:
-  test:
+  build_and_deploy:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       # Setup Chrome
       - uses: browser-actions/setup-chrome@latest
 
-      # Run Maven tests and generate Allure results
+      # Run tests and generate Allure results
       - run: mvn clean test
 
       # Install Allure
@@ -34,7 +34,7 @@ jobs:
           allure generate target/allure-results --clean -o allure-report
 
       # Upload Allure report as an artifact
-      - name: Upload Allure Report as Artifact
+      - name: Upload Allure Report
         uses: actions/upload-artifact@v3
         with:
           name: allure-report
