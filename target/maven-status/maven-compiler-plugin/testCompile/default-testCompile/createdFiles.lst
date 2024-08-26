@@ -1,0 +1,13 @@
+com\codenboxautomationlab\utils\UserUtils.class
+com\codenboxautomationlab\base\BasePage.class
+com\codenboxautomationlab\utils\ConfigUtils.class
+com\codenboxautomationlab\base\BaseTest.class
+com\codenboxautomationlab\testcases\LoginTest.class
+com\codenboxautomationlab\config\EndPoint.class
+com\codenboxautomationlab\pages\HomePage.class
+com\codenboxautomationlab\pages\RegistrationPage.class
+com\codenboxautomationlab\testcases\SignupTest.class
+com\codenboxautomationlab\utils\PropertiesUtils.class
+com\codenboxautomationlab\pages\LoginPage.class
+com\codenboxautomationlab\factory\DriverFactory.class
+com\codenboxautomationlab\objects\User.class

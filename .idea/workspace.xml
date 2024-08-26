@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4120648b-9c43-4acc-ad63-9702e3c8323f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\Program Files\Maven\apache-maven-3.9.9" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2l0IZMxrNUBFkxgJcsaDoaOyOF9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.LoginTest.VerifyThatUserCanNavigateToLoginPageSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignupTest.VerifyThatUserCanNavigateToSignupPageSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignupTest.VerifyThatUserCanRegisterUsingCorrectData.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignupTest.VerifyThatUserCanRegisterWithCorrectData.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignupTest.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GETTASK&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GETTASK" />
+      <recent name="D:\GETTASK\src\test\java\net\phptravels" />
+      <recent name="D:\GETTASK\src\test" />
+      <recent name="D:\GETTASK\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GETTASK\src\test\java\net\phptravels" />
+      <recent name="D:\GETTASK\src\test\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.phptravels.pages" />
+      <recent name="net.phptravels.testcases" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginTest.VerifyThatUserCanNavigateToLoginPageSuccessfully">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GETTASK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.phptravels.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.phptravels.testcases" />
+      <option name="MAIN_CLASS_NAME" value="net.phptravels.testcases.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.VerifyThatUserCanNavigateToLoginPageSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GETTASK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.phptravels.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.phptravels.testcases" />
+      <option name="MAIN_CLASS_NAME" value="net.phptravels.testcases.LoginTest" />
+      <option name="METHOD_NAME" value="VerifyThatUserCanNavigateToLoginPageSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GETTASK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.phptravels.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.phptravels.testcases" />
+      <option name="MAIN_CLASS_NAME" value="net.phptravels.testcases.SignupTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignupTest.VerifyThatUserCanNavigateToSignupPageSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GETTASK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.phptravels.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.phptravels.testcases" />
+      <option name="MAIN_CLASS_NAME" value="net.phptravels.testcases.SignupTest" />
+      <option name="METHOD_NAME" value="VerifyThatUserCanNavigateToSignupPageSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignupTest.VerifyThatUserCanRegisterUsingCorrectData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GETTASK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.phptravels.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.phptravels.testcases" />
+      <option name="MAIN_CLASS_NAME" value="net.phptravels.testcases.SignupTest" />
+      <option name="METHOD_NAME" value="VerifyThatUserCanRegisterUsingCorrectData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginTest.VerifyThatUserCanNavigateToLoginPageSuccessfully" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.SignupTest.VerifyThatUserCanRegisterUsingCorrectData" />
+        <item itemvalue="TestNG.SignupTest" />
+        <item itemvalue="TestNG.SignupTest.VerifyThatUserCanNavigateToSignupPageSuccessfully" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4120648b-9c43-4acc-ad63-9702e3c8323f" name="Changes" comment="" />
+      <created>1711955463150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711955463150</updated>
+    </task>
+    <servers />
+  </component>
+</project>
