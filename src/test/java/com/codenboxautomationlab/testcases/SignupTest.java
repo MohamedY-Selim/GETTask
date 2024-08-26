@@ -28,14 +28,14 @@ public class SignupTest extends BaseTest {
 
     @Story("Signup Page")
     @Test(description = "Register using correct data")
-    public void VerifyThatUserCanRegisterUsingCorrectData() throws InterruptedException {
+    public void VerifyThatUserCanRegisterUsingCorrectData() {
         RegistrationPage registrationPage = new RegistrationPage(getDriver());
         String confirmationMessage = registrationPage
                 .load()
                 .fillRegistrationForm()
                 .getConfirmationMessage();
-        Assert.assertEquals(confirmationMessage,"Your registration is completed. We will contact with you soon. Thank you !");
-        ConfigUtils.getInstance().setNewUserData(registrationPage.getUser().getEmail(),registrationPage.getUser().getPhone());
+        Assert.assertEquals(confirmationMessage, "Your registration is completed. We will contact with you soon. Thank you !");
+        ConfigUtils.getInstance().setNewUserData(registrationPage.getUser().getEmail(), registrationPage.getUser().getPhone());
     }
 
 }

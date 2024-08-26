@@ -15,9 +15,9 @@ public class ConfigUtils {
         String env = System.getProperty("env", "TESTING");
         switch (env) {
             case "TESTING" ->
-                    properties = PropertiesUtils.loadProperties("src/test/java/net/phptravels/config/testing.properties");
+                    properties = PropertiesUtils.loadProperties("src/test/java/com/codenboxautomationlab/config/testing.properties");
             case "PRODUCTION" ->
-                    properties = PropertiesUtils.loadProperties("src/test/java/net/phptravels/config/production.properties");
+                    properties = PropertiesUtils.loadProperties("src/test/java/com/codenboxautomationlab/config/production.properties");
             default -> throw new RuntimeException("Environment isn't supported");
         }
     }
@@ -54,12 +54,12 @@ public class ConfigUtils {
 
     public void setNewUserEmail(String email) {
         properties.setProperty("email", email);
-        PropertiesUtils.updateProperties("src/test/java/net/phptravels/config/testing.properties");
+        PropertiesUtils.updateProperties("src/test/java/com/codenboxautomationlab/config/testing.properties");
     }
 
     public void setNewUserPassword(String password) {
         properties.setProperty("password", password);
-        PropertiesUtils.updateProperties("src/test/java/net/phptravels/config/testing.properties");
+        PropertiesUtils.updateProperties("src/test/java/com/codenboxautomationlab/config/testing.properties");
     }
 
 
