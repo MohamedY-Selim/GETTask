@@ -1,11 +1,11 @@
-name: Run Selenium Test
+name: Run Selenium Test and Deploy Allure Report
 
 on:
   push:
     branches: [ "master", "main" ]
 
 jobs:
-  test:
+  test_and_deploy:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -23,10 +23,6 @@ jobs:
       # Run Maven tests and generate Allure results
       - run: mvn clean test
 
-      # Debug: List Allure Results Directory
-      - name: List Allure Results Directory
-        run: ls -R target/allure-results
-
       # Install Allure
       - name: Install Allure
         run: |
@@ -37,7 +33,7 @@ jobs:
         run: |
           allure generate target/allure-results --clean -o allure-report
 
-      # Debug: List Allure Report Directory
+      # Debug: List Allure Report Directory (Optional)
       - name: List Allure Report Directory
         run: ls -R allure-report
 
@@ -48,6 +44,7 @@ jobs:
           name: allure-report
           path: allure-report
 
+      # Publish Allure Report to GitHub Pages
       - name: Publish Allure Report to GitHub Pages
         if: success() # Only run if the previous steps succeed
         run: |
